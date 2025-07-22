@@ -5,7 +5,7 @@ on:
       - main
 
 jobs:
-  name: push branch
+  job-name: push-branch
     runs on: ubuntu-latest
     steps:
     - name: Run on push to specific branch
