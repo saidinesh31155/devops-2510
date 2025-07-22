@@ -21,6 +21,12 @@ jobs:
         run: node -v 
       - name: build application
         run: echo "build is completed"
+  test-job:
+    needs: checkout
+    runs-on: ubuntu-latest
+    steps: 
+      - name: testing
+        run: echo "Testing is done"
 
   deploy:
     needs: build  
