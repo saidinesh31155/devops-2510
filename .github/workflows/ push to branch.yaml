@@ -1,11 +1,11 @@
-name: On Push to specific branch
+name: push to branch
 on:
   push:
     branches:
       - main
 
 jobs:
-  name: push to main
+  name: push branch
     runs on: ubuntu-latest
       steps:
       - name: Run on push to specific branch
