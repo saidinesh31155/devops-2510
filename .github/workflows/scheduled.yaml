@@ -1,0 +1,10 @@
+name: schedule workflow
+on:
+  schedule:
+    - cron: '* * * * *'
+jobs:
+  db-backup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: db backup
+        run: echo "database backup is done"
