@@ -1,4 +1,4 @@
-name: schedule workflow
+name: schedule 5min
 on:
   schedule:
     - cron: '*/5 * * * *'
