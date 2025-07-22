@@ -6,8 +6,8 @@ on:
 
 jobs:
   name: push to main
-  runs on: ubuntu-latest
-  steps:
-    - name: Run on push to specific branch
-      run: echo "push to main branch"
+    runs on: ubuntu-latest
+      steps:
+      - name: Run on push to specific branch
+        run: echo "push to main branch"
     
