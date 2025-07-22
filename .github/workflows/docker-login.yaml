@@ -1,0 +1,8 @@
+name: docker hub login
+on: workflow_dispatch
+jobs:
+  docker-login:
+    runs-on: ubuntu-latest
+    steps:
+      - name: login to dockerhub
+        run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u ${{ vars.DOCKER_USERNAME }} --password-stdin
