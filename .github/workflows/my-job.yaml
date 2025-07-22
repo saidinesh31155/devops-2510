@@ -10,3 +10,5 @@ jobs:
       uses: actions/checkout@v4.2.2
     - name: list folders and files
       run: ls -a
+    - name: display database credentials
+        run: echo "db password ${{ secrets.DB_PASSWORD }} and username ${{ vars.DB_USERNAME }}"
