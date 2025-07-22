@@ -2,7 +2,7 @@ name: On Push to specific branch
 on:
   push:
     branches:
-      - dev
+      - main
 
 jobs:
   name: push to main
