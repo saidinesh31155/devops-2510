@@ -8,5 +8,5 @@ jobs:
         uses: actions/checkout@v4.2.2
       - name: list the files and folders
         run:
-          ls
+          ls -a
           pwd
