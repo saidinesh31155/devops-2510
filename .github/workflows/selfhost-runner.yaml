@@ -6,7 +6,9 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4.2.2
-      - name: to know the dir
-        run: pwd
+      - name: list files and folders
+        run: ls
+      - name: install nginx
+        run: sudo apt install nginx -y
           
           
