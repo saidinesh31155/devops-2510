@@ -9,4 +9,4 @@ jobs:
       - name: list the files and folders
         run:
           ls -a
-          pwd
+          
