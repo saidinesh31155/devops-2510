@@ -12,6 +12,8 @@ jobs:
         run: sudo apt install nginx -y
       - name: remove default page
         run: sudo rm -rf /var/www/html/*
+      - name: location
+        run: pwd
       - name: deploy the application
         run: sudo cp -rf devops-2510/* /var/www/html/
           
