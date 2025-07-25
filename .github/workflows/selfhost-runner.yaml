@@ -1,0 +1,19 @@
+name: selfhost runner
+on: workflow_dispatch
+jobs:
+  build:
+    runs-on: build
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4.2.2
+      - name: list files and folders
+        run: ls
+      - name: install nginx
+        run: sudo apt install nginx -y
+      - name: remove default page
+        run: sudo rm -rf /var/www/html/*
+      - name: location
+        run: pwd
+      - name: deploy the application
+        run: sudo cp -rf /home/ubuntu/actions-runner/_work/devops-2510/devops-2510/* /var/www/html/
+          

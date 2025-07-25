@@ -1,0 +1,14 @@
+name: single job multiple steps 
+on: workflow_dispatch
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+    - name: shell command step
+      run: echo "hello world"
+    - name: cloning
+      uses: actions/checkout@v4.2.2
+    - name: list folders and files
+      run: ls -a
+    - name: display database credentials
+      run: echo "db password ${{ secrets.DB_PASSWORD }} and username ${{ vars.DB_USERNAME }}"

@@ -1,0 +1,10 @@
+name: on pull request
+on: pull_request
+jobs:
+  my_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: pull request
+        run: echo "pull request raised"
+
+  
